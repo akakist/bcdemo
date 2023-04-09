@@ -1,0 +1,63 @@
+2023-04-06 13:29:22.644666+0300 bcwallet[32793:10031973] [SceneConfiguration] Info.plist contained no UIScene configuration dictionary (looking for configuration named "(no name)")
+2023-04-06 13:29:22.644975+0300 bcwallet[32793:10031973] [SceneConfiguration] Info.plist contained no UIScene configuration dictionary (looking for configuration named "(no name)")
+2023-04-06 13:29:22.657009+0300 bcwallet[32793:10031973] [Application] Failed to instantiate the default view controller for UIMainStoryboardFile 'Main1' - perhaps the designated entry point is not set?
+1680776962.775 - bcwallet: static void registerModules() ---THREAD REPORT 4716712640 (0x1192352C0) 4716712640
+	/Users/sergejbelalov/work/blockchain/common/blockchainHandler.cpp: 40, void registerModules() , dt:00 (00)
+
+registerService ObjectProxyPolled
+Service 'ObjectProxyPolled' registered
+registerService ObjectProxyThreaded
+Service 'ObjectProxyThreaded' registered
+registerService Oscar
+Service 'Oscar' registered
+registerService OscarSecure
+Service 'OscarSecure' registered
+registerService RPC
+Service 'RPC' registered
+registerService SocketIO
+Service 'SocketIO' registered
+registerService Timer
+Service 'Timer' registered
+registerService ReferrerClient
+Service 'ReferrerClient' registered
+1680776962.778 - bcwallet: running service RPC
+1680776962.778 - bcwallet: BlockchainHandler: skipped param, using deflt RPC.IterateTimeoutSec=60.000000
+1680776962.778 - bcwallet: BlockchainHandler: skipped param, using deflt RPC.ConnectionActivity=600.000000
+1680776962.778 - bcwallet: BlockchainHandler: skipped param, using deflt RPC.BindAddr_MAIN=NONE
+1680776962.778 - bcwallet: BlockchainHandler: skipped param, using deflt RPC.BindAddr_RESERVE=NONE
+1680776962.779 - bcwallet: running service Oscar
+1680776962.779 - bcwallet: running service SocketIO
+1680776962.779 - bcwallet: BlockchainHandler: skipped param, using deflt SocketIO.epoll_timeout_millisec=1000
+1680776962.779 - bcwallet: BlockchainHandler: skipped param, using deflt SocketIO.listen_backlog=128
+1680776962.779 - bcwallet: BlockchainHandler: skipped param, using deflt SocketIO.n_workers=2
+1680776962.779 - bcwallet: running service ReferrerClient
+1680776962.779 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_001_common_connect_failed=20.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_002_D3_caps_get_service_request_is_timed_out=15.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_007_D6_resend_ping_caps_short=7.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_008_D6_resend_ping_caps_long=20.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_009_pong_timed_out_caps_long=40.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_020_D31_wait_after_send_PT_CACHE_on_recvd_from_GetReferrers=2.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt ReferrerClient.T_040_D2_cache_pong_timed_out_from_neighbours=2.000000
+1680776962.780 - bcwallet: BlockchainHandler: skipped param, using deflt CapsIP=x.testquant.com:10100
+1680776963.285 - bcwallet: caps 0.0.0.0:0
+1680776963.285 - bcwallet: caps 45.142.214.251:10100
+1680776963.285 - bcwallet: STAGE_D2_PING_NEIGHBOURS_start
+1680776963.285 - bcwallet: d2_start
+1680776963.285 - bcwallet: running service Timer
+1680776963.286 - bcwallet: running service ObjectProxyThreaded
+1680776963.288 - bcwallet: caps 0.0.0.0:0
+1680776963.290 - bcwallet: sendEvent PT_CACHED 0.0.0.0:0
+1680776963.291 - bcwallet: epoll_socket_info::close connect
+1680776963.291 - bcwallet: close reason: connect remote name 0.0.0.0:0 type _CONNECTED fd 7
+1680776963.292 - bcwallet: caps 45.142.214.251:10100
+1680776963.292 - bcwallet: sendEvent PT_CACHED 45.142.214.251:10100
+1680776963.294 - bcwallet: DFSREferrer::Service::on_ConnectFailed 0.0.0.0:0 (/Users/sergejbelalov/work/megatron/modules/referrerClient/referrerClientService.cpp 118)
+1680776963.294 - bcwallet: d4_on_connect_failed 0.0.0.0:0
+1680776963.294 - bcwallet: addr is uplink 0
+1680776963.294 - bcwallet: DFSREferrer::Service::on_ConnectFailed 0.0.0.0:0 (/Users/sergejbelalov/work/megatron/modules/referrerClient/referrerClientService.cpp 118)
+1680776963.294 - bcwallet: d4_on_connect_failed 0.0.0.0:0
+1680776963.294 - bcwallet: addr is uplink 0
+1680776963.306 - bcwallet: default keystore is not set
+1680776963.384 - bcwallet: default keystore is not set
+1680776963.654 - bcwallet: b.remains()==len 8 8
+	

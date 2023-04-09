@@ -1,0 +1,3 @@
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/rebuild_cache.dir
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/edit_cache.dir
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/jpeg.dir

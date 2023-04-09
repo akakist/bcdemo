@@ -1,0 +1,4 @@
+
+ADD_SUBDIRECTORY(blockchainNode)
+ADD_SUBDIRECTORY(blockchainTop)
+ADD_SUBDIRECTORY(invoicer)

@@ -1,0 +1,16 @@
+SocketIO.epoll_timeout_millisec=10
+
+# socket poll thread count
+SocketIO.n_workers=2
+SocketIO.epoll_timeout_millisec=10
+
+# socket poll thread count
+SocketIO.n_workers=2
+SocketIO.epoll_timeout_millisec=10
+
+# socket poll thread count
+SocketIO.n_workers=2
+SocketIO.epoll_timeout_millisec=10
+
+# socket poll thread count
+SocketIO.n_workers=2

@@ -1,0 +1,120 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the size_t exist failed with the following output:
+Change Dir: /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8d0ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8d0ba.dir/build.make CMakeFiles/cmTC_8d0ba.dir/build
+Building C object CMakeFiles/cmTC_8d0ba.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/cmTC_8d0ba.dir/CheckSymbolExists.c.o -c /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: unexpected type name 'size_t': expected expression
+  return ((int*)(&size_t))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8d0ba.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_8d0ba/fast] Error 2
+
+
+File /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef size_t
+  return ((int*)(&size_t))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setmode exist failed with the following output:
+Change Dir: /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_80f42/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_80f42.dir/build.make CMakeFiles/cmTC_80f42.dir/build
+Building C object CMakeFiles/cmTC_80f42.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/cmTC_80f42.dir/CheckSymbolExists.c.o -c /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_80f42.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_80f42/fast] Error 2
+
+
+File /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <io.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setmode
+  return ((int*)(&setmode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHAR_IS_UNSIGNED failed with the following output:
+Change Dir: /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4178/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b4178.dir/build.make CMakeFiles/cmTC_b4178.dir/build
+Building C object CMakeFiles/cmTC_b4178.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCHAR_IS_UNSIGNED  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/cmTC_b4178.dir/src.c.o -c /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/src.c
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/src.c:4:13: error: 'x' declared as an array with a negative size
+    char x[ (char)0xff ]; /* x[-1] if signed */
+            ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_b4178.dir/src.c.o] Error 1
+make: *** [cmTC_b4178/fast] Error 2
+
+
+Source file was:
+
+void f()
+{
+    char x[ (char)0xff ]; /* x[-1] if signed */
+}
+
+Performing C SOURCE FILE Test RIGHT_SHIFT_IS_UNSIGNED failed with the following output:
+Change Dir: /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b6ee/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9b6ee.dir/build.make CMakeFiles/cmTC_9b6ee.dir/build
+Building C object CMakeFiles/cmTC_9b6ee.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DRIGHT_SHIFT_IS_UNSIGNED  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/cmTC_9b6ee.dir/src.c.o -c /Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/src.c
+/Users/sergejbelalov/work/megatron/lib/jpeg-9d/Build/CMakeFiles/CMakeTmp/src.c:4:13: error: 'x' declared as an array with a negative size
+    char x[ ((signed char)0xff) >> 1 ]; /* x[-1] if signed */
+            ^~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9b6ee.dir/src.c.o] Error 1
+make: *** [cmTC_9b6ee/fast] Error 2
+
+
+Source file was:
+
+void f()
+{
+    char x[ ((signed char)0xff) >> 1 ]; /* x[-1] if signed */
+}
+
